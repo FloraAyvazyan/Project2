@@ -1,0 +1,18 @@
+userName: floraayvazyan_72kWsC
+accessKey: PQ6wNsygb77eCxSVxbcZ
+framework: selenide-testng
+platforms:
+  - os: Windows
+    osVersion: 11
+    browserName: Chrome
+    browserVersion: latest
+  - os: Windows
+    osVersion: 11
+    browserName: Edge
+    browserVersion: 131.0
+
+parallelsPerPlatform: 1
+browserstackLocal: true
+buildName: browserstack-build-1
+projectName: BrowserStack Sample
+debug: "true"

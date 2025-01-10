@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Parallel Test Suite" parallel="tests" thread-count="3">
+    <test name="Windows Chrome">
+        <parameter name="browser" value="Chrome" />
+        <parameter name="os" value="Windows" />
+        <parameter name="osVersion" value="11" />
+        <classes>
+            <class name="Saucedemo.LoginTestBrowserStack" />
+        </classes>
+    </test>
+    <test name="Windows Edge">
+        <parameter name="browser" value="Edge" />
+        <parameter name="os" value="Windows" />
+        <parameter name="osVersion" value="11" />
+        <classes>
+            <class name="Saucedemo.LoginTestBrowserStack" />
+        </classes>
+    </test>
+
+</suite>

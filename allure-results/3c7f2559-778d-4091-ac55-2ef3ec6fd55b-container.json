@@ -1,0 +1,1 @@
+{"uuid":"3c7f2559-778d-4091-ac55-2ef3ec6fd55b","name":"BaseTest.BrowserStackTest.setUp","children":["332ae604-0b96-46bd-8bf9-2d0fa5d6f0f7"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1736548809810,"stop":1736548826149}],"afters":[],"start":1736548809809,"stop":1736548826149}
