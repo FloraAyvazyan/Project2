@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="SwoopAndSauceDemoTestSuite" thread-count="1" parallel="tests">
+
+    <!-- SwoopTests for Chrome -->
+    <test name="SwoopTestsChrome">
+        <parameter name="browserType" value="chrome"/>
+        <groups>
+            <run>
+                <include name="SwoopRegression"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="Swoop"/>
+        </packages>
+    </test>
+
+    <!-- SauceDemoTests for Chrome -->
+    <test name="SauceDemoTestsChrome">
+        <parameter name="browserType" value="chrome"/>
+        <groups>
+            <run>
+                <include name="SauceDemoLogin"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="Saucedemo"/>
+        </packages>
+    </test>
+
+    <test name="SwoopTestsEdge">
+        <parameter name="browserType" value="edge"/>
+        <groups>
+            <run>
+                <include name="SwoopRegression"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="Swoop"/>
+        </packages>
+    </test>
+
+    <test name="SauceDemoTestsEdge">
+        <parameter name="browserType" value="edge"/>
+        <groups>
+            <run>
+                <include name="SauceDemoLogin"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="Saucedemo"/>
+        </packages>
+    </test>
+
+
+
+
+</suite>
